@@ -1,0 +1,14 @@
+streamlit
+opencv-python-headless
+pytesseract
+Pillow
+numpy
+pdf2image
+pymupdf
+qrcode[pil]
+pyzbar
+PyPDF2
+reportlab
+uvicorn[standard]
+fastapi
+python-multipart   # 🔑 Wajib kalau upload file via FastAPI

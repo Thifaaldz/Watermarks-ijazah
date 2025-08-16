@@ -1,0 +1,15 @@
+version: '3'
+services:
+  watermark-app:
+    build: .
+    container_name: watermark-app
+    ports:
+      - "8501:8501"   # Streamlit
+      - "8000:8000"   # FastAPI
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true
+    restart: always
